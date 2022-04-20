@@ -1,11 +1,11 @@
-const newImg = (name, source, left, bottom) => {
-    let name = document.createElement('img');
-    name.src = = source;
-    name.style.position = 'fixed';
-    name.style.left = left;
-    name.style.bottom = bottom;
-    document.body.append(name);
+function newImage(y, l, b) {
+    let image = document.createElement('img');
+    image.src = y;
+    image.style.position = 'fixed';
+    image.style.left = l;
+    image.style.bottom = b;
+    document.body.append(image);
 };
 
-newImg(greenCharacter, 'assets/green-character.gif', '100px', '100px');
-newImg(treeSprite, 'assets/pine-tree.png', '450px', '200px');
+newImage('assets/green-character.gif', '100px', '100px');
+newImage('assets/pine-tree.png', '450px', '200px');
