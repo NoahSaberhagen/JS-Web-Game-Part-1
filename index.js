@@ -1,3 +1,6 @@
+const screenWidth = window.innerWidth;
+const screenHeight = window.innerHeight;
+
 const newImage = (y, l, b) => {
     let image = document.createElement('img');
     image.src = y;
@@ -15,6 +18,10 @@ const newItem = (y, l, b) => {
     })
 };
 
+for(let i = 0; i < screenWidth/100; i++){
+    let pixels = i * 100 + 'px'
+    newImage('assets/sky.png', pixels, 'screenHeight px');
+};
 
 newImage('assets/green-character.gif', '100px', '100px');
 newImage('assets/pine-tree.png', '450px', '200px');
