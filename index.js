@@ -1,8 +1,6 @@
 const screenWidth = window.innerWidth;
 const screenHeight = window.outerHeight;
 
-console.log(screenHeight);
-
 const newImage = (y, l, b) => {
     let image = document.createElement("img");
     image.src = y;
@@ -45,3 +43,4 @@ newImage("assets/tree.png","200px","300px");
 newItem("assets/sword.png", "500px", "405px");
 newItem("assets/sheild.png", "165px", "185px");
 newItem("assets/staff.png", "600px", "100px");
+
